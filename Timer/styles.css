@@ -1,0 +1,56 @@
+body{
+    background: rgb(151, 174, 136);
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 100px;
+    gap: 10px 10px;
+}
+
+.output{
+    background: white;
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 5rem;
+}
+
+.start{
+    outline:none;
+    background: rgb(83, 255, 114);
+    color: rgb(255,255,255);
+    font-size: 2.5rem;
+
+    border: 2px solid rgb(255,255,255);
+    border-radius: 20px;
+}
+
+.end{
+    outline:none;
+    background: rgb(244, 92, 92);
+    color: rgb(255,255,255);
+    font-size: 2.5rem;
+
+    border: 2px solid rgb(255,255,255);
+    border-radius: 20px;
+}
+
+.start:hover{
+    cursor: pointer;
+    background: rgb(0, 255, 0)
+}
+
+.end:hover{
+    cursor: pointer;
+    background: rgb(255, 0, 0);
+}
