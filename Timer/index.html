@@ -8,10 +8,25 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div data-output class="output">0:00</div>
-        <button data-start class="start">Start</button>
-        <button data-end class="end">End</button>
+    <ul class="tabs">
+        <li data-tab-target="#timer" class="active tab">Timer</li>
+        <li data-tab-target="#stopwatch" class="tab">Stopwatch</li>
+    </ul>
+
+    <div class="tab-content">
+        <!-- timer -->
+        <div id="timer" data-tab-content class="active">
+            <div class="container">
+                <div data-output class="output">0:00</div>
+                <button data-start class="start">Start</button>
+                <button data-end class="end">End</button>
+            </div>
+        </div>
+
+        <!-- stopwatch -->
+        <div id="stopwatch" data-tab-content>
+            <h1>Stopwatch</h1>
+        </div>
     </div>
 </body>
 </html>
