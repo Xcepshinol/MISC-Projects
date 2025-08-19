@@ -24,6 +24,8 @@ html, body{
     font-size:1.5rem;
 
     background: rgb(99, 148, 67);
+
+    color: white;
 }
 
 .tab{
@@ -106,3 +108,72 @@ html, body{
 
 
 /* stopwatch css */
+
+.stopwatch-container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 100px;
+    gap: 10px 10px;
+}
+
+.display{
+    background: rgba(255, 255, 255, 0.776);
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 70px;
+}
+
+.start-pause{
+    height: 50px;
+    background-color: rgb(206, 237, 206);
+    border-radius: 20px;
+    border-color: rgb(206, 237, 206);
+}
+
+.start-pause:hover{
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+    background-color: #a0dcae;
+    filter: drop-shadow(0 0 6px #96cea3) drop-shadow(0 0 6px #96cea3);
+    cursor: pointer;
+}
+
+.pause{
+    height: 50px;
+    background-color: rgb(245, 223, 202);
+    border-radius: 20px;
+    border-color: rgb(245, 223, 202);
+}
+
+.pause:hover{
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+    background-color: #f5bf92;
+    filter: drop-shadow(0 0 6px #ffc1aa);
+    cursor: pointer;
+}
+
+.reset{
+    height: 50px;
+    background-color: rgb(240, 206, 206);
+    border-radius: 20px;
+    border-color: rgb(240, 206, 206);
+}
+
+.reset:hover{
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+    background-color: #f9adad;
+    filter: drop-shadow(0 0 6px #ffc1aa);
+    cursor: pointer;
+}
+
+#stopwatch.active{
+    background-image: url('./pokemon-bg.png');
+    min-height: 100vh;
+}
